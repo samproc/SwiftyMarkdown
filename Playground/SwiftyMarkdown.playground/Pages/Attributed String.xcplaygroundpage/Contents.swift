@@ -80,7 +80,7 @@ If that is not set, then the system default will be used.
 		LineRule(token: "#### ",type : MarkdownLineStyle.h4, removeFrom: .both),
 		LineRule(token: "### ",type : MarkdownLineStyle.h3, removeFrom: .both),
 		LineRule(token: "## ",type : MarkdownLineStyle.h2, removeFrom: .both),
-		LineRule(token: "# ",type : MarkdownLineStyle.h1, removeFrom: .both)
+		LineRule(token: "# ",type : MarkdownLineStyle.h1, removeFrom: .none),
 	]
 	
 	static let characterRules = [
@@ -423,6 +423,6 @@ md.link.color = .red
 
 md.code.fontName = "CourierNewPSMT"
 	
-md.attributedString()
+print("Attributed String \(md.attributedString())")
 
 //: [Next](@next)

@@ -44,12 +44,12 @@ let rules = [
 	LineRule(token: "- ",type : MarkdownLineStyle.unorderedList, removeFrom: .leading),
 	LineRule(token: "###### ",type : MarkdownLineStyle.h6, removeFrom: .both),
 	LineRule(token: "##### ",type : MarkdownLineStyle.h5, removeFrom: .both),
-	LineRule(token: "#### ",type : MarkdownLineStyle.h4, removeFrom: .both),
+	LineRule(token: "#### ",type : MarkdownLineStyle.h4, removeFrom: .none),
 	LineRule(token: "### ",type : MarkdownLineStyle.h3, removeFrom: .both),
 	LineRule(token: "## ",type : MarkdownLineStyle.h2, removeFrom: .both),
 	LineRule(token: "# ",type : MarkdownLineStyle.h1, removeFrom: .both)
 ]
 
 let lineProcesser = SwiftyLineProcessor(rules: rules, defaultRule: MarkdownLineStyle.body)
-print(lineProcesser.process("#### Heading 4 ###").first?.line ?? "")
+print(lineProcesser.process("#### Heading 4").first?.line ?? "")
 

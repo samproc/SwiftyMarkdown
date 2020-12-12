@@ -156,8 +156,8 @@ If that is not set, then the system default will be used.
 	]
 	
 	static public var lineRules = [
-		LineRule(token: "=", type: MarkdownLineStyle.previousH1, removeFrom: .entireLine, changeAppliesTo: .previous),
-		LineRule(token: "-", type: MarkdownLineStyle.previousH2, removeFrom: .entireLine, changeAppliesTo: .previous),
+		LineRule(token: "=", type: MarkdownLineStyle.previousH1, removeFrom: .none, changeAppliesTo: .previous),
+		LineRule(token: "-", type: MarkdownLineStyle.previousH2, removeFrom: .none, changeAppliesTo: .previous),
 		LineRule(token: "\t\t- ", type: MarkdownLineStyle.unorderedListIndentSecondOrder, removeFrom: .leading, shouldTrim: false),
 		LineRule(token: "\t- ", type: MarkdownLineStyle.unorderedListIndentFirstOrder, removeFrom: .leading, shouldTrim: false),
 		LineRule(token: "- ",type : MarkdownLineStyle.unorderedList, removeFrom: .leading),
@@ -170,11 +170,11 @@ If that is not set, then the system default will be used.
 		LineRule(token: "    ", type: MarkdownLineStyle.codeblock, removeFrom: .leading, shouldTrim: false),
 		LineRule(token: "\t", type: MarkdownLineStyle.codeblock, removeFrom: .leading, shouldTrim: false),
 		LineRule(token: ">",type : MarkdownLineStyle.blockquote, removeFrom: .leading),
-		LineRule(token: "###### ",type : MarkdownLineStyle.h6, removeFrom: .both),
-		LineRule(token: "##### ",type : MarkdownLineStyle.h5, removeFrom: .both),
-		LineRule(token: "#### ",type : MarkdownLineStyle.h4, removeFrom: .both),
-		LineRule(token: "### ",type : MarkdownLineStyle.h3, removeFrom: .both),
-		LineRule(token: "## ",type : MarkdownLineStyle.h2, removeFrom: .both),
+		LineRule(token: "###### ",type : MarkdownLineStyle.h6, removeFrom: .none),
+		LineRule(token: "##### ",type : MarkdownLineStyle.h5, removeFrom: .none),
+		LineRule(token: "#### ",type : MarkdownLineStyle.h4, removeFrom: .none),
+		LineRule(token: "### ",type : MarkdownLineStyle.h3, removeFrom: .none),
+		LineRule(token: "## ",type : MarkdownLineStyle.h2, removeFrom: .none),
         LineRule(token: "# ",type : MarkdownLineStyle.h1, removeFrom: .none)
 	]
 	
