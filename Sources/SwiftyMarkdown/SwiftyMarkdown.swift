@@ -175,7 +175,7 @@ If that is not set, then the system default will be used.
 		LineRule(token: "#### ",type : MarkdownLineStyle.h4, removeFrom: .both),
 		LineRule(token: "### ",type : MarkdownLineStyle.h3, removeFrom: .both),
 		LineRule(token: "## ",type : MarkdownLineStyle.h2, removeFrom: .both),
-		LineRule(token: "# ",type : MarkdownLineStyle.h1, removeFrom: .both)
+        LineRule(token: "# ",type : MarkdownLineStyle.h1, removeFrom: .none)
 	]
 	
 	static public var characterRules = [
