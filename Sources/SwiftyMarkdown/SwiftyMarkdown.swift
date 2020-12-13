@@ -170,12 +170,12 @@ If that is not set, then the system default will be used.
 		LineRule(token: "    ", type: MarkdownLineStyle.codeblock, removeFrom: .leading, shouldTrim: false),
 		LineRule(token: "\t", type: MarkdownLineStyle.codeblock, removeFrom: .leading, shouldTrim: false),
 		LineRule(token: ">",type : MarkdownLineStyle.blockquote, removeFrom: .leading),
-		LineRule(token: "###### ",type : MarkdownLineStyle.h6, removeFrom: .none),
-		LineRule(token: "##### ",type : MarkdownLineStyle.h5, removeFrom: .none),
-		LineRule(token: "#### ",type : MarkdownLineStyle.h4, removeFrom: .none),
-		LineRule(token: "### ",type : MarkdownLineStyle.h3, removeFrom: .none),
-		LineRule(token: "## ",type : MarkdownLineStyle.h2, removeFrom: .none),
-        LineRule(token: "# ",type : MarkdownLineStyle.h1, removeFrom: .trailing)
+		LineRule(token: "###### ",type : MarkdownLineStyle.h6, removeFrom: .leading),
+		LineRule(token: "##### ",type : MarkdownLineStyle.h5, removeFrom: .leading),
+		LineRule(token: "#### ",type : MarkdownLineStyle.h4, removeFrom: .leading),
+		LineRule(token: "### ",type : MarkdownLineStyle.h3, removeFrom: .leading),
+		LineRule(token: "## ",type : MarkdownLineStyle.h2, removeFrom: .leading),
+        LineRule(token: "# ",type : MarkdownLineStyle.h1, removeFrom: .leading)
 	]
 	
 	static public var characterRules = [
